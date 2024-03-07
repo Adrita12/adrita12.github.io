@@ -85,12 +85,13 @@ body::-webkit-scrollbar-thumb{
   height: 8vw;
   width: 8vw;
 }
-/* video{
+video{
     height: 100vh;
     width: 100%;
     object-fit:cover;
     position: fixed;
-} */
+    scale: 1.5;
+}
 
 
 #video-container{
