@@ -90,7 +90,6 @@ video{
     width: 100%;
     object-fit:cover;
     position: fixed;
-    scale: 1.5;
 }
 
 
