@@ -307,140 +307,110 @@ background-image: url('https://stcet.b-cdn.net/wp-content/uploads/2023/08/Prof-G
 background-image: url('https://stcet.b-cdn.net/wp-content/uploads/2023/08/Prof-Gautam-Bannerjea.webp');
 }
 
-#page3,#page4{
-  height: 100vh;
-  width: 100%;
-  position: relative;
-  display: flex;
-  align-items: center;
-  padding: 3vw,1vw;
-  justify-content: space-evenly;
-}
-#page3 .elem,#page4 .elem{
-  height: 80vh;
-  width: 30%;
-  overflow: hidden;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
- 
+#page3 {
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
 }
 
-#page3 .elem img,#page4 .elem img{
-  border-radius:3vw;
-  height: 100;
-  width:100%;
-  object-fit: cover;
-  scale:1;
-  opacity: 1;
-}
-
-#page3 .elem .dets,#page4 .elem .dets{
-  border-radius: 60px;
-  width: 70%;
-  position: absolute;
-  z-index: 9;
-  background-color:rgba(0,0,0,0.4);
-  opacity: 0;
-  overflow: hidden;
-  color: white;
-  display: flex;
-  align-items:center;
-  justify-content: center;
-}
-#page3 .elem:hover .dets{
-height: 15vw;
-transition: 0.5s ease;
-opacity: 1;
-}
-
-/* #page3 .elem:hover .dets,#page4 .elem:hover .dets{
-  height: 12vw;
-  transition: 0.5s ease;
-  opacity: 1;
-} */
-
-#page3 .elem:hover .dets .hidden{
-display: block;
-}
-
-#page3 .elem .dets .hidden{
-  display: none;
-  position: relative;
-  top: 3%;
-
-}
-
-#page3 .elem .dets .hidden button{
-text-transform: uppercase;
-display: block;
-background-color: #ececec; 
-border-radius: 12px;
-color: black;
-font-size: 1.3vw;
-font-weight: 800;
-transition: .4s;
-border: none;
-padding: 15px 30px;
-letter-spacing: 3px;
-margin: 10px auto;
-}
-
-#page3 .elem .dets .hidden button:hover{
-background-color: rgb(0, 0, 0);
-color: #ffffff;
-box-shadow: 0 0 5px rgb(216, 95, 176),
-            0 0 25px rgb(216, 95, 176),
-            0 0 50px rgb(216, 95, 176),
-            0 0 200px rgb(216, 95, 176);
--webkit-box-reflect: below 1 px linear-gradient(transparent, #0005);
-}
-
-
-#page4 .elem:hover .dets{
-height: 15vh;
-transition: 0.7s ease;
-opacity: 1;
-}
-
-#page4 .elem:hover .dets .hidden{
-display: block;
-}
-
-
-#page4 .elem .dets .hidden{
-display: none;
+.item-container {
 position: relative;
-top: 3%;
-
+margin: 24px;
+width: 320px;
+height: 500px;
+overflow: hidden;
+background-color: #fff;
+box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.15);
+cursor: pointer;
 }
 
-#page4 .elem .dets .hidden button{
+.img-container,
+.body-container {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+.img-container img {
+width: 100%;
+}
+
+.body-container {
+position: relative;
+}
+
+.overlay {
+position: relative;
+width: 100%;
+height: 400px;
+background-color: rgba(24, 83, 122, 0.6);
+opacity: 0;
+transition: height linear 0.4s, opacity linear 0.2s;
+}
+
+.item-container:hover .overlay {
+opacity: 1;
+height: 220px;
+}
+
+.event-info {
+background-color: #fff;
+/* background-color: rgba(0,0,0,0.8); */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 8px;
+}
+
+.title{
+color: #910A67;
+font-size: 2.5em;
+font-weight: bold;
+letter-spacing: 1px;
+margin: 15px;
+}
+
+
+.additional-info {
+border-top: 1px solid #bbb;
+margin-top: 35px;
+padding: 28px;
+padding-bottom: 0;
+}
+
+
+
+.action {
+color: #fff;
+border: 3px solid #fff;
+background-color: transparent;
+position: absolute;
+top: -100px;
+left: 50%;
+transform: translateX(-50%);
+width: 60%;
+outline: none;
+cursor: pointer;
+padding: 12px;
 text-transform: uppercase;
-display: block;
-background-color: #ececec; 
-border-radius: 12px;
-color: black;
-font-size: 1.3vw;
-font-weight: 800;
-transition: .4s;
-border: none;
-padding: 15px 30px;
-letter-spacing: 3px;
-margin: 10px auto;
+font-size: 1.3em;
+font-weight: bold;
+letter-spacing: 2px;
+transition: background-color 0.4s, top 0.4s;
 }
 
-#page4 .elem .dets .hidden button:hover{
-background-color: rgb(0, 0, 0);
-color: #ffffff;
-box-shadow: 0 0 5px rgb(216, 95, 176),
-            0 0 25px rgb(216, 95, 176),
-            0 0 50px rgb(216, 95, 176),
-            0 0 200px rgb(216, 95, 176);
--webkit-box-reflect: below 1 px linear-gradient(transparent, #0005);
+.item-container:hover .action {
+top: 50px;
 }
 
+.action:hover {
+background-color: rgba(255, 255, 255, 0.2);
+}
 
 @keyframes slide{
   from {
@@ -789,118 +759,7 @@ input:checked + label .description {
   transform: translateY(0) !important;
 }
 
-/* .card[for="c1"] {
-  background-image: url('https://stcet.b-cdn.net/wp-content/uploads/2023/08/Prof-Gautam-Bannerjea.webp');
-}
-.card[for="c2"] {
-  background-image: url('https://stcet.b-cdn.net/wp-content/uploads/2023/08/Prof-Gautam-Bannerjea.webp');
-}
-.card[for="c3"] {
-  background-image: url('https://stcet.b-cdn.net/wp-content/uploads/2023/08/Prof-Gautam-Bannerjea.webp');
-}
-.card[for="c4"] {
-  background-image: url('https://stcet.b-cdn.net/wp-content/uploads/2023/08/Prof-Gautam-Bannerjea.webp');
-} */
 
-
-
-  #page3,#page4{
-      min-height: 100vh;
-      width: 100%;
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 5vw,3vw;
-      justify-content: space-evenly;
-
-  }
-  
-  #page3 .elem,#page4 .elem{
-      height: 100vh;
-      width: 100%;
-      overflow: hidden;
-      margin-bottom: 1vw;
-  }
-  
-  #page3 .elem img,#page4 .elem img{
-      border-radius:12vw;
-      height: 100;
-      width:100%;
-      object-fit: cover;
-      scale:0.65;
-      opacity: 1;
-      position: absolute;
-  }
-  #page3 .elem .dets,#page4 .elem .dets{ 
-      border-radius: 60px;
-      width: 70%;
-      position: absolute;
-      opacity: 1;
-      scale:0.75;
-      color: white;
-  }
-
-  #page3 .elem:hover .dets {
-      height: 45vw;
-      transition: 0.5s ease;
-      opacity: 1;
-  }
-  #page3 .elem .dets .hidden p,#page4 .elem .dets .hidden p{
-      font-size: 5vw;
-      text-align: center;
-  }
-  
-  #page3 .elem .dets .hidden{
-    top: 1.5%;
-  
-}
-
-#page3 .elem .dets .hidden button,#page4 .elem .dets .hidden button{
-  text-transform: uppercase;
-  display: block;
-  background-color: #ececec; 
-  border-radius: 12px;
-  color: black;
-  font-size: 3.3vw;
-  font-weight: 800;
-  transition: .4s;
-  border: none;
-  padding: 15px 30px;
-  letter-spacing: 3px;
-  margin: 10px auto;
-}
-#page4 .elem .dets{
-border-radius: 60px;
-width: 70%;
-position: absolute;
-z-index: 9;
-/* background-color: rgb(0, 0, 0, 0.2); */
-background-color:rgba(0,0,0,0.4);
-opacity: 1;
-overflow: hidden;
-color: white;
-display: flex;
-align-items:center;
-justify-content: center;
-}
-
-#page4 .elem:hover .dets{
-height: 10vh;
-transition: 0.7s ease;
-opacity: 1;
-}
-
-#page4 .elem:hover .dets .hidden{
-display: block;
-}
-
-
-#page4 .elem .dets .hidden{
-display: none;
-position: fixed;
-top: 3%;
-}
 .footer{
 height: 75vh;
 }
@@ -941,8 +800,8 @@ width: 100%;
 
 
 #preloader{
-background: #0C0C0C url(loader.gif) no-repeat center center;
-background-size: 50%;
+background: #0C0C0C url(preload.webp) no-repeat center center;
+background-size: 30%;
 height: 100vh;
 width: 100%;
 position: fixed;
