@@ -442,7 +442,21 @@ background-image: url('https://stcet.b-cdn.net/wp-content/uploads/2023/08/Prof-G
   white-space: nowrap;
   position: relative;
 }
-
+#page5 .logos h1{
+  /* transform: translate(45%,45%); */
+  width: 100%;
+  margin-bottom: 120px;
+  font-size: 80px;
+  font-weight: 900;
+  text-align: center;
+  color: #41042e;
+  letter-spacing: 15px;
+  position: relative;
+  -webkit-box-reflect: below 2px linear-gradient(transparent, #e78ecb);
+  line-height: 0.7em ;
+  outline: none;
+  animation: animate 5s linear infinite;
+}
 .logos:before,.logos:after{
   position: absolute;
   top: 0;
@@ -793,7 +807,10 @@ padding: 0vh 0vh;
 white-space: nowrap;
 position: relative;
 }
-
+#page5 .logos h1{
+  font-size: 20px;
+  word-break: break-all;
+}
 .logos:before,.logos:after{
 position: absolute;
 top: 0;
