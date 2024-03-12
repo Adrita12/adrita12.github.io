@@ -51,7 +51,12 @@ border-radius: 50px;
   justify-content: space-evenly;
   
 }
+#nav h2{
+  margin-top: 35px;
+}
+
 #nav h4,a{
+  margin-top: 35px;
   font-weight: bolder;
 }
 #nav a{
