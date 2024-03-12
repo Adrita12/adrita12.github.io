@@ -373,8 +373,7 @@ background-image: url('https://stcet.b-cdn.net/wp-content/uploads/2023/08/Prof-G
 .title{
   color: #ffffff;
   text-shadow: 0 0 10px #e78ecb,
-                 0 0 20px #e78ecb,
-                 0 0 40px #e78ecb;
+                 0 0 20px #e78ecb;
   font-size: 2.5em;
   font-weight: bold;
   letter-spacing: 1px;
