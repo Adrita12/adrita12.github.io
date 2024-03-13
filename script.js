@@ -8,8 +8,6 @@ preloading();
 
 
 
-
-   
 function hint1(){
     document.addEventListener('selectionchange', function() {
         var selection = document.getSelection();
@@ -55,7 +53,17 @@ function hint2(){
 }
 hint2();
 
-
+//   function hint3() {
+//         var imageElement = document.querySelector('img[alt="sponsor_hint.png"]');
+//         imageElement.addEventListener('click', function() {
+//             showPopup("hehe hint recieved");
+//         });
+    
+//         function showPopup(message) {
+//             alert(message);
+//         }
+//     }   
+//    hint3();
 function hint3() {
     var sponsorHintImages = document.querySelectorAll('img[alt="sponsor_hint.png"]');
     sponsorHintImages.forEach(function(imageElement) {
@@ -84,6 +92,7 @@ function hint4() {
 }
 
 hint4();
+
    
 
    

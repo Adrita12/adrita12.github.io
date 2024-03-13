@@ -260,19 +260,20 @@ display: flex;
 justify-content: center;
 align-items: center;
 margin: 15px;
+position: relative;
 }
 .card[for="c3"] img{
-  opacity: 1;
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-  margin: 15px;
-  position: absolute;
+opacity: 1;
+border-radius: 50%;
+height: 50px;
+width: 50px;
+margin: 15px;
+position: absolute;
 }
 .card[for="c3"] .icon:hover{
-  position: relative;
-  opacity: 0;
-  transition: ease 1s;
+position: relative;
+opacity: 0;
+transition: ease 1s;
 }
 
 .card > .row > .description {
@@ -585,7 +586,6 @@ color:#fff;
 
 
 
-
 @media (max-width:700px){
 #video{
   scale: 3;
@@ -765,19 +765,6 @@ color:#fff;
   align-items: center;
   margin: 10px;
   
-}
-.card[for="c3"] img{
-  opacity: 1;
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-  margin: 15px;
-  position: absolute;
-}
-.card[for="c3"] .icon:hover{
-  position: relative;
-  opacity: 0;
-  transition: ease 1s;
 }
 
 .card > .row > .description {
