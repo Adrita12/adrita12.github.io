@@ -60,7 +60,7 @@ function hint3(){
     function hint3() {
         var imageElement = document.querySelector('img[alt="sponsor_hint.png"]');
         imageElement.addEventListener('click', function() {
-            showPopup("Code is 112");
+            showPopup("Hehe hint recievedddd");
         });
     
         function showPopup(message) {
