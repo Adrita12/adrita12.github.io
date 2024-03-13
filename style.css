@@ -766,7 +766,14 @@ color:#fff;
   margin: 10px;
   
 }
-
+.card[for="c3"] img{
+  opacity: 1;
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  margin: 10px;
+  position: absolute;
+}
 .card > .row > .description {
   display: flex;
   justify-content: center;
@@ -803,11 +810,6 @@ input:checked + label .description {
   opacity: 1 !important;
   transform: translateY(0) !important;
 }
-
-
-
-
-
   
 .footer{
 height: 75vh;
@@ -829,8 +831,12 @@ position: relative;
 }
 
 #page5 .logos h1{
-font-size: 20px;
-word-break: break-all;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 2px;
 }
 
 .logos:before,.logos:after{
