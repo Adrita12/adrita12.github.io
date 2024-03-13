@@ -766,6 +766,19 @@ color:#fff;
   margin: 10px;
   
 }
+.card[for="c3"] img{
+  opacity: 1;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  margin: 15px;
+  position: absolute;
+}
+.card[for="c3"] .icon:hover{
+  position: relative;
+  opacity: 0;
+  transition: ease 1s;
+}
 
 .card > .row > .description {
   display: flex;
