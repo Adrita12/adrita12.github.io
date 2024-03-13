@@ -56,22 +56,34 @@ function hint2(){
 hint2();
 
 
-function hint3(){
-    function hint3() {
-        var imageElement = document.querySelector('img[alt="sponsor_hint.png"]');
+function hint3() {
+    var sponsorHintImages = document.querySelectorAll('img[alt="sponsor_hint.png"]');
+    sponsorHintImages.forEach(function(imageElement) {
         imageElement.addEventListener('click', function() {
-            showPopup("Hehe hint recievedddd");
+            showPopup("hehe hint received");
         });
-    
-        function showPopup(message) {
-            alert(message);
-        }
+    });
+    function showPopup(message) {
+        alert(message);
     }
-    
-    hint3();
-    
 }
 hint3();
+
+    
+
+   
+function hint4() {
+
+    var imageElement = document.querySelector('label[for="c3"] .icon');
+    imageElement.addEventListener('click', function() {
+        showPopup("hehe hint received");
+    });
+    function showPopup(message) {
+        alert(message);
+    }
+}
+
+hint4();
    
 
    
