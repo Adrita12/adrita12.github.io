@@ -289,7 +289,12 @@ transition-delay: .3s;
 transition: all .3s ease;
 color: white;
 }
-
+.card > .row > .description h4{
+  text-shadow: 0 0 10px #e78ecb,
+               0 0 20px #e78ecb;
+  font-size: 20px;
+  font-weight: 900;
+}
 .description p {
 color: #e78ecb;
 padding-top: 5px;
@@ -316,7 +321,7 @@ transform: translateY(0) !important;
 background-image: url('photo1.webp');
 }
 .card[for="c2"] {
-background-image: url('https://stcet.b-cdn.net/wp-content/uploads/2023/08/Prof-Gautam-Bannerjea.webp');
+background-image: url('photo2.webp');
 }
 .card[for="c3"] {
 background-image: url('https://stcet.b-cdn.net/wp-content/uploads/2023/08/Prof-Gautam-Bannerjea.webp');
@@ -399,6 +404,8 @@ margin: 1px;
 
 .info{
   padding-top: 10px;
+  color: #fff;
+  text-shadow: 0 0 5px #e78ecb;
   /* padding-bottom: 0px; */
 }
 .additional-info {
