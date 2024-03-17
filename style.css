@@ -318,7 +318,7 @@ transform: translateY(0) !important;
 }
 
 .card[for="c1"] {
-background-image: url('photo1.webp');
+background-image: url('photo4.webp');
 }
 .card[for="c2"] {
 background-image: url('photo2.webp');
@@ -327,7 +327,7 @@ background-image: url('photo2.webp');
 background-image: url('photo3.webp');
 }
 .card[for="c4"] {
-background-image: url('photo4.webp');
+background-image: url('photo04.webp');
 }
 
 
