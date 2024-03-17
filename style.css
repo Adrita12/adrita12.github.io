@@ -270,11 +270,11 @@ width: 50px;
 margin: 15px;
 position: absolute;
 }
-.card[for="c3"] .icon:hover{
+/* .card[for="c3"] .icon:hover{
 position: relative;
 opacity: 0;
 transition: ease 1s;
-}
+} */
 
 .card > .row > .description {
 display: flex;
@@ -327,7 +327,7 @@ background-image: url('photo2.webp');
 background-image: url('photo3.webp');
 }
 .card[for="c4"] {
-background-image: url('https://stcet.b-cdn.net/wp-content/uploads/2023/08/Prof-Gautam-Bannerjea.webp');
+background-image: url('photo4.webp');
 }
 
 
