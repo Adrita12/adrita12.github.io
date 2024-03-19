@@ -492,7 +492,7 @@ animation: animate 5s linear infinite;
   right: 0;
   background: linear-gradient(to right, transparent,rgb(3, 3, 3));
 }
-.logos .logo-slide:hover {
+.logo-slide:hover {
   animation-play-state: paused;
 }
 .logo-slide{
