@@ -501,8 +501,9 @@ display: inline-block;
 animation:30s slide infinite linear;
 }
 .logo-slide img{
-  height: 40vh;
-  margin: 0 4vh;
+  height: 10vh;
+  width: 30vh;
+  margin-left: 60vh;
 }
 
 
@@ -556,9 +557,9 @@ color:#fff;
 .footer-col ul li:not(:last-child){
   margin-bottom: 12px;
 }
-/* .footer-col ul li a{
-
-} */
+.footer-col ul li a{
+  margin: 0vh;
+  }
 .footer-col ul li a,.footer-col ul li{
   font-size: 16px;
   text-transform: capitalize;
@@ -854,9 +855,9 @@ content: "";
 z-index:2;
 }
 .logo-slide img{
-height: 40vh;
-scale: 0.6;
-margin-left: -10vh;
+  height: 10vh;
+  width: 20vh;
+  margin: 10vh 15vh;
 }
 #preloader{
 height: 100%;
