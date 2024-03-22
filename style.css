@@ -500,11 +500,13 @@ display: inline-block;
 animation:30s slide infinite linear;
 }
 .logo-slide img{
-  height: 15vh;
-  width: 30vh;
-  margin-left: 60vh;
+  height: 20vh;
+  width: 20vh;
+  margin-left: 50vh;
 }
-
+.logo-slide .spon1{
+  height: 10vh;
+} 
 
 .container{
 height: 30vh;
