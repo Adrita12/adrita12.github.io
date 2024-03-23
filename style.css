@@ -861,6 +861,11 @@ z-index:2;
   width: 20vh;
   margin: 10vh 15vh;
 }
+.logo-slide .spon1{
+  height: 10vh;
+  width: 15vh;
+}
+
 #preloader{
 height: 100%;
 width: 100%;
