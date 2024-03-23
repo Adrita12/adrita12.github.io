@@ -505,7 +505,8 @@ animation:30s slide infinite linear;
   margin-left: 50vh;
 }
 .logo-slide .spon1{
-  height: 10vh;
+  height: 20vh;
+  width: 30vh;
 } 
 
 .container{
