@@ -270,11 +270,11 @@ width: 50px;
 margin: 15px;
 position: absolute;
 }
-/* .card[for="c3"] .icon:hover{
+.card[for="c3"] .icon:hover{
 position: relative;
 opacity: 0;
 transition: ease 1s;
-} */
+}
 
 .card > .row > .description {
 display: flex;
@@ -507,7 +507,8 @@ animation:30s slide infinite linear;
 .logo-slide .spon1{
   height: 20vh;
   width: 30vh;
-} 
+}
+
 
 .container{
 height: 30vh;
@@ -865,7 +866,6 @@ z-index:2;
   height: 10vh;
   width: 15vh;
 }
-
 #preloader{
 height: 100%;
 width: 100%;
